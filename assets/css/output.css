@@ -33,6 +33,12 @@
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
 */
+:root {
+  --warna-primary: 2, 7, 8; /* Misalnya, merah dengan RGB */
+  --warna-secondary: 29, 32, 38; /* Misalnya, merah dengan RGB */
+  --warna-tertiary: 194, 155, 64; /* Misalnya, merah dengan RGB */
+  --warna-quaternary: 208, 207, 216; /* Misalnya, merah dengan RGB */
+}
 
 html {
   line-height: 1.5;
@@ -787,22 +793,22 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(251 251 250 / var(--tw-bg-opacity));
+  background-color: rgb(var(--warna-primary));
 }
 
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(108 180 208 / var(--tw-bg-opacity));
+  background-color: rgb(var(--warna-secondary));
 }
 
 .bg-tertiary {
   --tw-bg-opacity: 1;
-  background-color: rgb(16 43 77 / var(--tw-bg-opacity));
+  background-color: rgb(var(--warna-tertiary));
 }
 
 .bg-quaternary {
   --tw-bg-opacity: 1;
-  background-color: rgb(206 38 77 / var(--tw-bg-opacity));
+  background-color: rgb(var(--warna-quaternary));
 }
 .bg-slate-100 {
   --tw-bg-opacity: 1;
@@ -937,45 +943,24 @@ video {
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 251 250 / var(--tw-bg-opacity));
-}
-
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(180 227 243 / var(--tw-bg-opacity));
-}
-
-.bg-tertiary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 43 77 / var(--tw-bg-opacity));
-}
-
-.bg-quaternary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(206 38 77 / var(--tw-bg-opacity));
-}
-
-
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(251 251 250 / var(--tw-text-opacity));
+  color: rgb(var(--warna-primary));
 }
 
 .text-secondary {
   --tw-text-opacity: 1;
-  color: rgb(108 180 208 / var(--tw-text-opacity));
+  color: rgb(var(--warna-secondary));
 }
 
 .text-tertiary {
   --tw-text-opacity: 1;
-  color:  rgb(16 43 77 / var(--tw-text-opacity));
+  color:  rgb(var(--warna-tertiary));
 }
   
 .text-quaternary {
   --tw-text-opacity: 1;
-  color: rgb(206 38 77 / var(--tw-text-opacity));
+  color: rgb(var(--warna-quaternary));
 }
 
 .text-slate-300 {
